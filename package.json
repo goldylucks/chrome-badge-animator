@@ -1,0 +1,38 @@
+{
+  "name": "chrome-badge-animator",
+  "version": "0.0.0",
+  "description": "Chrome badge animator",
+  "main": "build/ChromeBadgeAnimator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --progress --colors --watch",
+    "clean:build": "rm -rf build/",
+    "prebuild": "npm run clean:build",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "prelocalPublish": "npm run build",
+    "localPublish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldylucks/chrome-badge-animator.git"
+  },
+  "keywords": [
+    "chrome",
+    "badge",
+    "animation"
+  ],
+  "author": "goldylucks <adamgoldman7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldylucks/chrome-badge-animator/issues"
+  },
+  "homepage": "https://github.com/goldylucks/chrome-badge-animator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.12.14",
+    "webpack-error-notification": "0.1.6"
+  }
+}
